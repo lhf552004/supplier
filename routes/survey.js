@@ -5,7 +5,7 @@
 var Survey =  require('../models/data/Survey');
 
 module.exports = function (app, i18n) {
-    app.post('/survey',isLoggedIn, function (req, res) {
+    app.post('/survey', function (req, res) {
 
         var userId = req.user.id;
         var address = req.body.address;
